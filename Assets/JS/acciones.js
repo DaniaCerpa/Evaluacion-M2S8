@@ -1,4 +1,4 @@
-let action1= parseInt(prompt("ingrese su identificador"));
+let action1= parseInt(prompt("Ingrese su identificador"));
 
 
 function ValidarID() {
