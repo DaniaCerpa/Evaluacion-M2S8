@@ -1,12 +1,19 @@
-let action1= parseInt(prompt("Ingrese su identificador"));
 
+function eleccioncliente(nombre, id, clave, saldo)
+ {this.nombre = nombre
+    this.id = id
+    this.clave = clave
+    this.saldo = saldo}
+let cliente1 = new eleccioncliente ("Valentina Cerpa", 12345, 2222, 500);
+let cliente2 = new eleccioncliente ("Aldo Oliva", 67895, 3333, 1000);
+let cliente3 = new eleccioncliente ("Angel Candia", 89423, 4444, 2000)
+
+let clientes= [cliente1, cliente2, cliente3]
 
 function ValidarID() {
-    let clientes = [
-        { nombre: "Valentina Cerpa", id: 12345, clave: 2222, saldo: 500 },
-        { nombre: "Aldo Oliva", id: 67895, clave: 3333, saldo: 1000 },
-        { nombre: "Angel Garmendia", id: 89423, clave: 4444, saldo: 2000 }]
-let cliente = null
+let action1= parseInt(prompt("Ingrese su identificador"));    
+
+let cliente =null
 for (let i = 0; i < clientes.length; i++) {
     if (clientes[i].id ==action1){
         cliente = clientes[i];
